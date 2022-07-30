@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 /* INDEX */
@@ -16,7 +16,7 @@ a {
 }
 
 .menu {
-  background: #1c202b;
+  background: linear-gradient(to right, #1c202b, #252a38, #2b3242);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -42,7 +42,7 @@ a {
   padding: 1rem;
 }
 .cabecera {
-  background: #242733;
+  background: linear-gradient(to right, #242733, #252a38, #2b3242);
   padding-top: 90px;
   width: 100%;
   display: flex;
