@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* INDEX */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  background: #1c202b;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  position: fixed;
+  z-index: 100;
+  grid-area: navbar;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu__item {
+  padding: 1rem;
+}
+.cabecera {
+  background: #242733;
+  padding-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+}
+
+.contenidoHead {
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.itemHead {
+  margin-bottom: 10px;
+}
+
+.presentacion {
+  background: #2a2d38;
+  grid-area: main;
+}
+
+.contenido1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.intCont1 {
+  flex-direction: column;
+}
+
+.infoPresentacion {
+  display: flex;
+  flex-direction: flex-start;
+}
+
+.infoPresentacion img {
+  width: 100%;
+  height: 50%;
+  margin-right: 20px;
+}
+
+.informacion {
+  background: #1d1e2a;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  grid-area: info;
+}
+
+.educacionYrecomendaciones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 12.5%;
+  margin-bottom: 5%;
+}
+
+.experiencia {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+}
+.experiencia div {
+  margin-right: 10%;
+}
+
+.imagenHabilidad {
+  width: 100px;
+}
+
+/* SOBRE MI */
+.sobreMi {
+  background: #2a2d38;
+}
+
+.contenidoSobreMi {
+  grid-area: main;
+}
+
+.contenidoSobreMi h2 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contentSobreMi {
+  display: flex;
+  padding: 90px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentSobreMi img {
+  width: 40%;
+}
+
+.textoGrande {
+  width: 40%;
+}
+
+.imgYTextoChico {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+/* SERVICIOS */
+.servicios {
+  background: #2a2d38;
+}
+
+.mainServicios {
+  padding: 10%;
+  grid-area: main;
+}
+
+.contenedorServicios {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentServicios {
+  border: white;
+  border-radius: 25px;
+  border-style: solid;
+  width: fit-content;
+  padding: 20px;
+  margin-right: 5%;
+}
+
+.contentServicios h3 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+#cajaArriba {
+  margin-bottom: 130px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  background: #2a2d38;
+}
+
+.mainPortfolio {
+  grid-area: main;
+}
+
+/* CONTACTANOS */
+.contactanos {
+  background: #2a2d38;
+}
+
+.mainContacto {
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  grid-area: main;
+}
+
+.contenedorForm {
+  width: fit-content;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.Respuesta {
+  width: 500px;
+  height: 30px;
+  border-radius: 50px;
+  padding: 10px;
+  color: #2a2d38;
+  font-size: large;
+  margin-bottom: 30px;
+}
+
+#mensaje {
+  width: 470px;
+  max-width: 470px;
+  height: 300px;
+  max-height: 300px;
+  border-radius: 40px;
+  color: #2a2d38;
+  padding: 30px;
+  font-size: larger;
+  margin-bottom: 30px;
+}
+
+#botonEnviar {
+  color: #2a2d38;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #1c202b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  grid-area: footer;
+}
+
+/*@MEDIAS Y GRIDS*/
+.grid {
+  display: grid;
+  grid-template-areas:
+    "navbar"
+    "header"
+    "main"
+    "footer";
+}
+
+@media (max-width: 500px) {
+  * {
+    font-size: 12px;
+  }
+
+  * img {
+    max-width: 20%;
+  }
+  .informacion {
+    margin-left: 0px;
+  }
+
+  .menu {
+    padding: 0px;
+  }
+
+  #cajaArriba {
+    margin-bottom: 70px;
+  }
+  .contentServicios {
+    margin-bottom: 70px;
+  }
+  .contenedorServicios {
+    flex-direction: column;
+  }
+}
