@@ -3,6 +3,8 @@
   padding: 0;
   color: white;
   overflow-x: visible;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /* INDEX */
@@ -270,8 +272,8 @@ a {
     font-size: 12px;
   }
 
-  * img {
-    max-width: 20%;
+  .imagenHabilidad {
+    max-width: 10%;
   }
   .informacion {
     margin-left: 0px;
@@ -289,5 +291,12 @@ a {
   }
   .contenedorServicios {
     flex-direction: column;
+  }
+
+  .infoPresentacion {
+    flex-direction: column;
+  }
+  .infoPresentacion img {
+    max-width: 40%;
   }
 }
