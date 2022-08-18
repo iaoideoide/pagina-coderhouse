@@ -64,7 +64,6 @@ a {
 }
 
 .presentacion {
-  background: #2a2d38;
   grid-area: main;
 }
 
@@ -121,7 +120,7 @@ a {
 }
 
 /* SOBRE MI */
-.sobreMi {
+.sobreMi, .contactanos, .portfolio, .servicios, .presentacion {
   background: #2a2d38;
 }
 
@@ -157,10 +156,6 @@ a {
 }
 
 /* SERVICIOS */
-.servicios {
-  background: #2a2d38;
-}
-
 .mainServicios {
   padding: 10%;
   grid-area: main;
@@ -190,19 +185,11 @@ a {
 }
 
 /* PORTFOLIO */
-.portfolio {
-  background: #2a2d38;
-}
-
 .mainPortfolio {
   grid-area: main;
 }
 
 /* CONTACTANOS */
-.contactanos {
-  background: #2a2d38;
-}
-
 .mainContacto {
   display: flex;
   justify-content: center;

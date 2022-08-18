@@ -1,7 +1,14 @@
 //colores
-$azul-nav-foot: #1c202b;
-$azul-presentacion: #2a2d38;
-$azul-mas-oscuro: #1d1e2a;
+$colores: (
+  color1: #1c202b,
+  color2: #2a2d38,
+  color3: #1d1e2a,
+);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
 
 * {
   margin: 0;
@@ -23,7 +30,12 @@ a {
 }
 
 .menu {
-  background: linear-gradient(to right, $azul-nav-foot, #252a38, #2b3242);
+  background: linear-gradient(
+    to right,
+    map-get($colores, color1),
+    #252a38,
+    #2b3242
+  );
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -52,8 +64,7 @@ a {
   background: linear-gradient(to right, #242733, #252a38, #2b3242);
   padding-top: 90px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   align-items: center;
   grid-area: header;
 }
@@ -70,13 +81,12 @@ a {
 }
 
 .presentacion {
-  background: $azul-presentacion;
+  @extend .sobreMi;
   grid-area: main;
 }
 
 .contenido1 {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   padding: 20px;
 }
 
@@ -96,7 +106,7 @@ a {
 }
 
 .informacion {
-  background: $azul-mas-oscuro;
+  background: map-get($colores, color3);
   margin-left: 8%;
   display: flex;
   flex-direction: column;
@@ -127,7 +137,7 @@ a {
 
 /* SOBRE MI */
 .sobreMi {
-  background: $azul-presentacion;
+  background: map-get($colores, color2);
 }
 
 .contenidoSobreMi {
@@ -163,7 +173,7 @@ a {
 
 /* SERVICIOS */
 .servicios {
-  background: $azul-presentacion;
+  @extend .sobreMi;
 }
 
 .mainServicios {
@@ -196,7 +206,7 @@ a {
 
 /* PORTFOLIO */
 .portfolio {
-  background: $azul-presentacion;
+  @extend .sobreMi;
 }
 
 .mainPortfolio {
@@ -205,12 +215,11 @@ a {
 
 /* CONTACTANOS */
 .contactanos {
-  background: $azul-presentacion;
+  @extend .sobreMi;
 }
 
 .mainContacto {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
   padding: 10%;
   grid-area: main;
 }
@@ -226,7 +235,7 @@ a {
   height: 30px;
   border-radius: 50px;
   padding: 10px;
-  color: $azul-presentacion;
+  color: map-get($colores, color2);
   font-size: large;
   margin-bottom: 30px;
 }
@@ -237,14 +246,14 @@ a {
   height: 300px;
   max-height: 300px;
   border-radius: 40px;
-  color: $azul-presentacion;
+  color: map-get($colores, color2);
   padding: 30px;
   font-size: larger;
   margin-bottom: 30px;
 }
 
 #botonEnviar {
-  color: $azul-presentacion;
+  color: map-get($colores, color2);
   background-color: white;
   border: none;
   border-radius: 5px;
@@ -254,9 +263,8 @@ a {
 /* FOOTER */
 
 .footer {
-  background: $azul-nav-foot;
-  display: flex;
-  justify-content: center;
+  background: map-get($colores, color1);
+  @include flex-center;
   align-items: center;
   height: 7vh;
   grid-area: footer;
