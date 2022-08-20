@@ -44,7 +44,6 @@ a {
 
 .cabecera {
   background: linear-gradient(to right, #242733, #252a38, #2b3242);
-  padding-top: 90px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -84,10 +83,15 @@ a {
 .infoPresentacion {
   display: flex;
   flex-direction: flex-start;
+  justify-content: space-evenly;
+}
+
+.infoPresentacion p {
+  max-width: 400px;
 }
 
 .infoPresentacion img {
-  width: 100%;
+  width: 50%;
   height: 50%;
   margin-right: 20px;
 }
@@ -208,8 +212,8 @@ a {
 }
 
 .Respuesta {
-  width: 500px;
-  height: 30px;
+  width: 470px;
+  height: 50px;
   border-radius: 50px;
   padding: 10px;
   color: #2a2d38;
