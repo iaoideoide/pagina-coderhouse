@@ -68,6 +68,9 @@ a {
   align-items: center;
   grid-area: header;
 }
+.cabecera p {
+  max-width: 500px;
+}
 
 .contenidoHead {
   flex-direction: column;
@@ -157,18 +160,18 @@ a {
   align-items: center;
 }
 
-.contentSobreMi img {
-  width: 40%;
+.contentSobreMi p {
+  max-width: 500px;
 }
 
-.textoGrande {
+.contentSobreMi img {
   width: 40%;
 }
 
 .imgYTextoChico {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  margin-right: 40px;
 }
 
 /* SERVICIOS */
@@ -279,10 +282,23 @@ a {
     "main"
     "footer";
 }
+@media (max-width: 1000px) {
+  .contentSobreMi {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .imgYTextoChico {
+    margin-bottom: 40px;
+  }
+}
 
 @media (max-width: 500px) {
   * {
     font-size: 12px;
+  }
+  .contentSobreMi {
+    padding: 3%;
+    font-size: 8px;
   }
 
   .imagenHabilidad {
@@ -311,5 +327,15 @@ a {
   }
   .infoPresentacion img {
     max-width: 40%;
+  }
+
+  .Respuesta {
+    width: 200px;
+    font-size: small;
+  }
+  #mensaje {
+    width: 170px;
+    height: 200px;
+    font-size: small;
   }
 }
