@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  overflow-x: visible;
+  overflow-x: hidden;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
@@ -49,6 +49,7 @@ a {
   justify-content: center;
   align-items: center;
   grid-area: header;
+  overflow-x: hidden;
 }
 
 .cabecera p {
