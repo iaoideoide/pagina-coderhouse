@@ -67,6 +67,7 @@ a {
   align-items: center;
   grid-area: header;
   overflow-x: hidden;
+  padding: 20px;
 }
 .cabecera p {
   max-width: 500px;
@@ -128,6 +129,9 @@ a {
   justify-content: space-between;
   margin-right: 12.5%;
   margin-bottom: 5%;
+}
+.educacionYrecomendaciones p {
+  margin-right: 10px;
 }
 
 .experiencia {
@@ -306,6 +310,9 @@ a {
     height: 200px;
     font-size: small;
   }
+  .infoPresentacion {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
@@ -338,9 +345,6 @@ a {
     flex-direction: column;
   }
 
-  .infoPresentacion {
-    flex-direction: column;
-  }
   .infoPresentacion img {
     max-width: 40%;
   }
