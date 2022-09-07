@@ -296,6 +296,17 @@ a {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 660px) {
+  .Respuesta {
+    width: 300px;
+    font-size: small;
+  }
+  #mensaje {
+    width: 300px;
+    height: 200px;
+    font-size: small;
+  }
+}
 
 @media (max-width: 500px) {
   * {
@@ -339,7 +350,7 @@ a {
     font-size: small;
   }
   #mensaje {
-    width: 170px;
+    width: 200px;
     height: 200px;
     font-size: small;
   }
